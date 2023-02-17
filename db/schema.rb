@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_17_052737) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_17_060634) do
   create_table "points", force: :cascade do |t|
     t.string "amount"
     t.integer "user_id", null: false
@@ -39,6 +39,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_17_052737) do
     t.string "tshirt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "lastname"
+    t.string "email"
+    t.string "gender"
+    t.string "city"
+    t.integer "phone"
+    t.string "disability"
+    t.string "diet"
+    t.integer "age"
+    t.boolean "computer"
     t.index ["user_type_id"], name: "index_users_on_user_type_id"
   end
 
