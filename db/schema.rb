@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_17_060634) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_17_060938) do
   create_table "points", force: :cascade do |t|
     t.string "amount"
     t.integer "user_id", null: false
@@ -48,6 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_17_060634) do
     t.string "diet"
     t.integer "age"
     t.boolean "computer"
+    t.integer "item"
     t.index ["user_type_id"], name: "index_users_on_user_type_id"
   end
 
